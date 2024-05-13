@@ -21,7 +21,7 @@ def fetch_youtube_data(channel_name):
     channel_params = {
         'part': 'statistics',
         'id': channel_id,
-        'key': 'AIzaSyCqOcjtRAQZy2ahcpJ_epSPFrTC7RxqEPM'
+        'key': 'your-api-key'
     }
     channel_resp = requests.get(channel_url, params=channel_params).json()
     return channel_resp['items'][0]
